@@ -9,7 +9,7 @@ import openai
 import streamlit as st
 import key
 
-openai.api_key  = (key.API_KEY)
+openai.api_key  = (API_KEY)
 
 def generateEmail(prompt):
     response = openai.completions.create(
