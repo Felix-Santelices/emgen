@@ -7,7 +7,6 @@ Created on Sun Jan 22 19:22:15 2023
 
 import openai
 import streamlit as st
-import key
 
 openai.api_key  = (API_KEY)
 
