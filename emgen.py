@@ -7,12 +7,9 @@ Created on Sun Jan 22 19:22:15 2023
 
 import openai
 import streamlit as st
-from dotenv import load_dotenv
-import os
+import key
 
-load_dotenv()
-
-openai.api_key  = os.getenv("key") 
+openai.api_key  = (key.API_KEY)
 
 def generateEmail(prompt):
     response = openai.completions.create(
