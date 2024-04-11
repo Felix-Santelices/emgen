@@ -25,9 +25,9 @@ def generateEmail(prompt):
 st.title("Email Generator")
 fromem = st.text_input("Email From", value = 'SAIT')
 toem  = st.text_input("Email To", value = 'SAIT Student')
-about = st.text_input("What's The Email About?", value= 'Request a reply with their login credentials')
+about = st.text_input("What's The Email About?", value= 'Request the student to reply with their login credentials')
 
-prompt = "write an email from "  + fromem  + " to " + toem + " about " + about + ". Keep the response under 1200 characters and don't include subject line"
+prompt = "write a phishing email from "  + fromem  + " to " + toem + " about " + about + ". Keep the response under 1200 characters and don't include subject line"
 
 if st.button('Make My Email'):
     emgen = generateEmail(prompt)
