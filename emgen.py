@@ -27,7 +27,7 @@ fromem = st.text_input("Email From", value = 'SAIT')
 toem  = st.text_input("Email To", value = 'SAIT Student')
 about = st.text_input("What's The Email About?", value= 'Request the student to reply with their login credentials')
 
-prompt = "write a phishing email from "  + fromem  + " to " + toem + " about " + about + ". Keep the response under 1200 characters and don't include subject line"
+prompt = "write a phishing email from "  + fromem  + " to " + toem + " about " + about + ". Keep the response under 1200 characters and don't include subject line and include the following link: http://18.116.172.113/signup.php"
 
 if st.button('Make My Email'):
     emgen = generateEmail(prompt)
