@@ -31,6 +31,4 @@ prompt = "write a phishing email from "  + fromem  + " to " + toem + " about " +
 
 if st.button('Make My Email'):
     emgen = generateEmail(prompt)
-    #st.write(emgen)
-    text = st.text_area("Make Changes:", value = emgen, height=500)
-    #generateEmail("Emailt to Ray to Say Hello"))
+    text = st.text_area("Generated Email:", value = emgen, height=500)
